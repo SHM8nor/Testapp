@@ -53,6 +53,29 @@ Uses flat config (eslint.config.js) with:
 - `src/main.tsx`: Application entry point that renders `<App />` into `#root`
 - `src/App.tsx`: Main application component
 
+## Styling Guidelines
+
+**Color Palette**: Use the following color scheme consistently across the application:
+- **Gunmetal** (#2d3142): Primary dark color for text and backgrounds
+- **Silver** (#bfc0c0): Secondary/neutral color for borders and subtle elements
+- **White** (#ffffff): Background and contrast color
+- **Coral** (#ef8354): Accent color for CTAs, highlights, and interactive elements
+- **Paynes Gray** (#4f5d75): Secondary dark color for headings and emphasis
+
+**CSS Variables** (use these in your CSS):
+```css
+--gunmetal: #2d3142;
+--silver: #bfc0c0;
+--white: #ffffff;
+--coral: #ef8354;
+--paynes-gray: #4f5d75;
+```
+
+**Important CSS Rules**:
+- Never use `display: flex` on the `body` element
+- Use the color palette above instead of purple/blue gradients
+- Maintain consistency with the defined color scheme
+
 ## Important Notes
 
 **React Compiler Impact**: The React Compiler is enabled, which affects Vite dev and build performance. This automatically optimizes React components but adds compilation overhead.
